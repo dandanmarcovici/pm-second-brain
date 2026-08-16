@@ -97,7 +97,7 @@ These four are self-context: they describe *your* situation, and nobody else can
 
 ## Extending the system
 
-Output templates (a pre-read format, a meeting notes format, a PM playbook) are a different kind of file: they describe how Claude should produce something *for other people*, and they're reusable across users. Those live in a companion repo, [`claude-skills-for-pms`](https://github.com/dandanmarcovici/claude-skills-for-pms) (in progress).
+Output templates (a pre-read format, a meeting notes format, a PM playbook) are a different kind of file: they describe how Claude should produce something *for other people*, and they're reusable across users. Those live in a companion repo, [`claude-skills-for-pms`](https://github.com/dandanmarcovici/claude-skills-for-pms).
 
 To use them: clone that repo alongside this one, drop its files into your own `_system/` (or a `frameworks/` folder), and add one line to `CLAUDE.md`'s "Load when relevant" list per file. This is the same pattern already used for `guardrails.md` and `workspace-structure.md`. Nothing about this repo's mechanism changes; you're just adding more content it can route to.
 

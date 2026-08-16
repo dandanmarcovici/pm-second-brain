@@ -2,13 +2,13 @@
 
 <!--
 This file is loaded every session.
-It tells Claude what your week actually looks like — hard blocks, deadlines, and when you can do deep work.
+It tells Claude what your week actually looks like: hard blocks, deadlines, and when you can do deep work.
 
 Update at the start of each week, or when the calendar changes significantly.
 
 Automation note: this is the obvious file to generate automatically if you have MCP access
 to your calendar. A skill that reads next week's events and writes this file saves the
-manual overhead entirely. Until then, fill it in by hand — imperfect is fine, empty is not.
+manual overhead entirely. Until then, fill it in by hand: imperfect is fine, empty is not.
 
 If you don't have direct calendar MCP access (e.g. your Claude Code setup is sanctioned but
 individual, not wired into company identity/calendar systems), a relay works too: point

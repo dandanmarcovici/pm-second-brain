@@ -15,8 +15,8 @@ Generic instructions produce generic behavior.
 
 This is a single-domain (work-only) template. If you also want Claude to
 distinguish work from personal contexts, split this into a root CLAUDE.md
-(identity, behavior rules — always active) and a work/CLAUDE.md overlay
-(workspace structure, work-specific loading rules — active only inside
+(identity, behavior rules: always active) and a work/CLAUDE.md overlay
+(workspace structure, work-specific loading rules: active only inside
 work/). For a work-only setup, one file is simpler and there's nothing
 to keep in sync between two copies.
 -->
@@ -101,12 +101,12 @@ Two loading modes:
 Start with focus-context and time-context as always-load.
 
 There are two kinds of files you'll add here over time:
-- Self-context (focus-context, time-context, guardrails) — describe YOUR
+- Self-context (focus-context, time-context, guardrails): describe YOUR
   situation. Nobody else can write these for you.
 - Templates and frameworks (pre-read formats, meeting notes formats, PM
-  playbooks) — describe HOW Claude should produce a given kind of output.
+  playbooks): describe HOW Claude should produce a given kind of output.
   These are reusable across people. Ready-made ones live in the companion
-  repo, claude-skills-for-pms — clone it alongside this one, drop its files
+  repo, claude-skills-for-pms. Clone it alongside this one, drop its files
   into `_system/` (or your own `frameworks/`), and add one "Load when
   relevant" line per file, following the same pattern as the entries below.
 -->

@@ -1,4 +1,4 @@
-# [Project / Area / Process Name] — Context
+# [Project / Area / Process Name] - Context
 
 <!--
 context.md holds stable background information.

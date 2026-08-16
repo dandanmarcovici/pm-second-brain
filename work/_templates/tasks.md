@@ -1,4 +1,4 @@
-# [Project / Area / Process Name] — Tasks
+# [Project / Area / Process Name] - Tasks
 
 <!--
 tasks.md is the daily driver. Three buckets, nothing else.
@@ -9,7 +9,7 @@ LATER = backlog, no time constraint
 
 Rules:
 - No checkboxes, no status fields, no sub-sections
-- One line per task — if it needs more, the detail goes in context.md or log.md
+- One line per task: if it needs more, the detail goes in context.md or log.md
 - Add a date inline only if there's a real deadline: "- ship v1 (2026-08-01)"
 - Move items up as priorities shift; archive completed ones in log.md
 -->

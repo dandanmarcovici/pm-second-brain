@@ -4,7 +4,7 @@
 These rules help Claude stay aligned with your best decision patterns.
 They are loaded when you're making decisions, planning, or prioritizing.
 
-Personalize this file heavily. The rules here are examples — useful starting points,
+Personalize this file heavily. The rules here are examples: useful starting points,
 but the value comes from rules that reflect your actual failure modes, not generic advice.
 
 How to use: for each rule, think about a specific moment where you went wrong.
@@ -59,7 +59,7 @@ flag it as a potential misalignment.
 If the user is designing or running a process, meeting, or workflow:
 ask whether it requires them to manually chase people, follow up on actions,
 or do pre-work on others' behalf to function.
-If yes, flag it — push toward a design that works without their intervention.
+If yes, flag it: push toward a design that works without their intervention.
 The question to ask: *"If you stopped pushing this manually, would it still run?"*
 
 ---
@@ -96,7 +96,7 @@ When the user is about to do a task, apply this test:
 
 If it's information movement, ask:
 *"How can I make myself obsolete here?"*
-*"Could this run without me — through automation, a template, or an agent?"*
+*"Could this run without me: through automation, a template, or an agent?"*
 
 ---
 

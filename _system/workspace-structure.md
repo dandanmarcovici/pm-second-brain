@@ -24,7 +24,7 @@ work/
 |----------|--------|---------|
 | Does it have a finish line? | Yes | projects/ |
 | Does it run on a recurring cadence forever? | Yes | processes/ |
-| Is it an ongoing strategic responsibility — no end date, no schedule? | Yes | areas/ |
+| Is it an ongoing strategic responsibility (no end date, no schedule)? | Yes | areas/ |
 | Is it a reusable reference model? | Yes | frameworks/ |
 | Is it an untested idea not yet committed to? | Yes | ideas/ |
 | Does a project deliver a process? | Yes | projects/ first, then graduate to processes/ when defined |
@@ -47,7 +47,7 @@ Every container brings overhead: context.md + tasks.md + log.md + docs/. Don't c
 
 ### context.md (required in every container)
 
-**Purpose:** Stable background — why this exists, what it is, who's involved, key references.
+**Purpose:** Stable background: why this exists, what it is, who's involved, key references.
 
 **What belongs here:**
 - Objective and scope
@@ -69,7 +69,7 @@ If context.md is growing past ~60 lines, it's absorbing things that belong in th
 
 **Purpose:** What needs to happen, in priority order.
 
-**Format — strict:**
+**Format (strict):**
 ```
 ## NOW
 - task (add date if time-constrained this week)
@@ -82,7 +82,7 @@ If context.md is growing past ~60 lines, it's absorbing things that belong in th
 ---
 
 ## LATER
-- task (backlog — no time constraint)
+- task (backlog, no time constraint)
 ```
 
 **Rules:**
@@ -108,7 +108,7 @@ Description of what happened and what changed.
 What was decided and the key rationale behind it.
 ```
 
-**Create at setup, even if empty.** Without a log, context.md absorbs the timeline and becomes unmaintainable. Converting later is painful — the context grows first and the log never gets created. An empty log costs nothing; a missing log costs you later.
+**Create at setup, even if empty.** Without a log, context.md absorbs the timeline and becomes unmaintainable. Converting later is painful: the context grows first and the log never gets created. An empty log costs nothing; a missing log costs you later.
 
 ---
 
@@ -122,12 +122,12 @@ What was decided and the key rationale behind it.
 - Avoid nesting more than one level deep inside docs/
 
 **Common subfolders:**
-- `archive/` — historical docs, superseded versions
-- `meeting-agendas/` — meeting agendas
-- `meeting-transcripts/` — meeting transcripts, pasted in or pulled via an MCP connector (e.g. Granola, Loom)
-- `reports/` — the world-facing version of a working doc
+- `archive/`: historical docs, superseded versions
+- `meeting-agendas/`: meeting agendas
+- `meeting-transcripts/`: meeting transcripts, pasted in or pulled via an MCP connector (e.g. Granola, Loom)
+- `reports/`: the world-facing version of a working doc
 
-**The `docs/` vs `docs/reports/` distinction:** a working topic starts as a single live file directly in `docs/` — the messy version, open for back-and-forth, open items, notes to yourself. Once it's ready to go outside (a pre-read, a status update, a synced Confluence/SharePoint page), the clean version goes in `docs/reports/`, usually under the same or a closely related filename. The messy file keeps evolving; the report is what gets shared and kept current. Anything found in `reports/` should always be the clean, current, front-facing copy.
+**The `docs/` vs `docs/reports/` distinction:** a working topic starts as a single live file directly in `docs/`: the messy version, open for back-and-forth, open items, notes to yourself. Once it's ready to go outside (a pre-read, a status update, a synced Confluence/SharePoint page), the clean version goes in `docs/reports/`, usually under the same or a closely related filename. The messy file keeps evolving; the report is what gets shared and kept current. Anything found in `reports/` should always be the clean, current, front-facing copy.
 
 ---
 
@@ -135,6 +135,6 @@ What was decided and the key rationale behind it.
 
 When a project is complete or no longer active:
 1. Add an ARCHIVED banner at the top of context.md and tasks.md
-2. Do not delete — it's history
+2. Do not delete: it's history
 3. Remove from any index or update entry to say ARCHIVED
 4. Content that will be referenced going forward moves to the relevant active project/process

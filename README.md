@@ -61,6 +61,8 @@ No checkboxes, status fields, or sub-sections. Rich context goes in `context.md`
 
 **`log.md`: traceability over time.** Newest entry first, 1-3 sentences, decisions tagged `[DECISION]`. This is what actually answers "what's the state of this, and how did we get here" months later: context.md tells you what's true now, log.md tells you why it became true. Skipping it is the single most common way these systems degrade: without it, context.md quietly turns into a timeline and stops being a clean reference.
 
+Keeping these three files current doesn't have to be a manual step at the end of a session. `claude-skills-for-pms` ships a `session-sync` skill built specifically for this convention: it scans the session, updates whichever of context.md, tasks.md, or log.md actually changed, and skips anything already captured. See [Extending the system](#extending-the-system) below for how to add it.
+
 ---
 
 ## The `docs/` folder
@@ -100,6 +102,8 @@ These four are self-context: they describe *your* situation, and nobody else can
 Output templates (a pre-read format, a meeting notes format, a PM playbook) are a different kind of file: they describe how Claude should produce something *for other people*, and they're reusable across users. Those live in a companion repo, [`claude-skills-for-pms`](https://github.com/dandanmarcovici/claude-skills-for-pms).
 
 To use them: clone that repo alongside this one, drop its files into your own `_system/` (or a `frameworks/` folder), and add one line to `CLAUDE.md`'s "Load when relevant" list per file. This is the same pattern already used for `guardrails.md` and `workspace-structure.md`. Nothing about this repo's mechanism changes; you're just adding more content it can route to.
+
+The same repo also ships `session-sync`, a skill (not a template or framework) built specifically for the context.md/tasks.md/log.md convention above. Copy `skills/session-sync/` into your own `.claude/skills/` and invoke it with `/session-sync` at the end of a working session.
 
 ---
 

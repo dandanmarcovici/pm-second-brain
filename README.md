@@ -135,7 +135,7 @@ Built for Claude Code. Works with any AI assistant that reads project files. Clo
 
 Built by [Daniel Marcovici](https://www.linkedin.com/in/daniel-marcovici). Fourteen years in industrial robotic software, now PM at Hypertherm. Building with AI tools on the side.
 
-This repo evolved from a year of actual use, not upfront design. The folder structure changed. The conventions got groomed over time. The templates here reflect what stayed.
+This repo evolved from 10 months of actual use, not upfront design. The folder structure changed. The conventions got groomed over time. The templates here reflect what stayed.
 
 ---
 

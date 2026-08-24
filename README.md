@@ -1,16 +1,16 @@
 # pm-second-brain
 
-A second-brain system built for PMs who use Claude Code as a daily working environment.
+A second-brain system built for PMs who use Claude Code or OpenAI Codex as a daily working environment.
 
-The problem it solves: Claude resets every conversation. If you work with it all day, you're either re-explaining context at the start of each session, or you design something so you don't have to. This is that something.
+The problem it solves: AI assistants reset every conversation. If you work with one all day, you're either re-explaining context at the start of each session, or you design something so you don't have to. This is that something.
 
-This is not a note-taking system or a PKM framework. It's a context architecture: folder structure, file conventions, and a `CLAUDE.md` file that feed the right information to the model at the right moment.
+This is not a note-taking system or a PKM framework. It's a context architecture: folder structure, file conventions, and agent instruction files that feed the right information to the model at the right moment.
 
 ---
 
 ## How it works
 
-Claude reads `CLAUDE.md` at the start of every session. That's where your behavioral rules live, your file conventions, your pointers to what's currently active.
+Claude Code reads `CLAUDE.md` at the start of every session. Codex reads `AGENTS.md`, which routes it to the same shared instructions in `CLAUDE.md`. That's where your behavioral rules live, your file conventions, and your pointers to what's currently active.
 
 The system has three layers:
 
@@ -115,19 +115,29 @@ If you don't have direct calendar MCP access (for example, Claude Code is sancti
 
 ---
 
+## Keep your context private
+
+The files in `_system/` and `work/knowledge/` are designed to hold priorities, schedules, people, products, and other potentially sensitive work context. A fork of a public GitHub repository is also public. Do not personalize these files in a public fork. Use a private repository or a local copy with a private remote for your actual second brain, and keep a public fork only for reusable contributions.
+
+---
+
 ## Getting started
 
 1. Clone the repo
 2. Fill in `_system/focus-context.md` with your current priorities
 3. Fill in `_system/time-context.md` with your real weekly constraints
-4. Edit `CLAUDE.md` to reflect your name, role, and how you want Claude to work with you
+4. Edit `CLAUDE.md` to reflect your name, role, and how you want your AI assistant to work with you
 5. Create your first container using the templates in `work/_templates/`
 
 ---
 
-## Using with other AI assistants
+## Using with AI assistants
 
-Built for Claude Code. Works with any AI assistant that reads project files. Clone the repo and ask the model to read `CLAUDE.md` and `_system/workspace-structure.md`, then tell it which conventions apply to its environment.
+**Claude Code:** reads `CLAUDE.md` directly.
+
+**OpenAI Codex:** reads `AGENTS.md` automatically. The included adapter directs Codex to the shared instructions in `CLAUDE.md`, so there is only one behavioral contract to maintain.
+
+**Other assistants:** clone the repo and ask the model to read `CLAUDE.md` and `_system/workspace-structure.md`, then tell it which conventions apply to its environment.
 
 ---
 

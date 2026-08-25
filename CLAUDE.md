@@ -124,18 +124,18 @@ Load when relevant:
 ## Organizational Knowledge
 
 <!--
-The knowledge/ folder holds reference files about your organization.
+The work/knowledge/ folder holds reference files about your organization.
 Tell Claude when to load each one. Remove this section if you don't need it.
 
 Example files to create:
-- knowledge/org.md → people, roles, reporting lines
-- knowledge/products.md → product architecture, dependencies
-- knowledge/ecosystem.md → partners, channels, external stakeholders
+- work/knowledge/org.md → people, roles, reporting lines
+- work/knowledge/products.md → product architecture, dependencies
+- work/knowledge/ecosystem.md → partners, channels, external stakeholders
 -->
 
 Load when relevant:
-- `knowledge/org.md` → when context about people, roles, or org structure would improve the response
-- `knowledge/products.md` → when discussing product architecture or dependencies
+- `work/knowledge/org.md` → when context about people, roles, or org structure would improve the response
+- `work/knowledge/products.md` → when discussing product architecture or dependencies
 
 ---
 

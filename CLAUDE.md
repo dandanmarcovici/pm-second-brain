@@ -114,6 +114,7 @@ There are two kinds of files you'll add here over time:
 Always load:
 - `_system/focus-context.md` → current priorities, active projects, present decision context
 - `_system/time-context.md` → real-world time constraints, deadlines, available focus windows
+- `_system/security-guardrails.md` → runtime boundaries for handling external or untrusted content; always active, not just when the topic looks security-related
 
 Load when relevant:
 - `_system/guardrails.md` → when helping with decisions, planning, prioritization, or behavioral patterns

@@ -8,7 +8,9 @@ Thumbs.db
 
 # Local environment / secrets (this repo ships no code, but keep this as a backstop)
 .env
-.env.local
+.env.*
+*.pem
+*.key
 
 # Claude Code local settings (personal, not part of the shared template)
 .claude/settings.local.json

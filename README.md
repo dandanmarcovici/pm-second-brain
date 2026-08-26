@@ -92,8 +92,11 @@ Format conventions for `docs/reports/`: `_system/pre-read-format.md`-style outpu
 | `focus-context.md` | Current primary focus and active projects |
 | `time-context.md` | Weekly constraints, deadlines, available windows |
 | `guardrails.md` | Behavioral rules for how Claude reasons with you |
+| `security-guardrails.md` | Runtime boundaries the assistant doesn't cross |
 
-These four are self-context: they describe *your* situation, and nobody else can write them for you. That's a deliberate scope limit: this repo ships the mechanism, not a library of frameworks.
+The first four are self-context: they describe *your* situation, and nobody else can write them for you. That's a deliberate scope limit: this repo ships the mechanism, not a library of frameworks.
+
+`security-guardrails.md` is the exception: it ships complete, and it's the one file here you don't personalize. It's on the "Always load" list rather than "Load when relevant", because a boundary that only applies when the topic looks security-related isn't a boundary. It matters most once you wire in a connector: outside content becomes something to read, never something to obey. See [SECURITY.md](SECURITY.md).
 
 ---
 
@@ -117,17 +120,24 @@ If you don't have direct calendar MCP access (for example, Claude Code is sancti
 
 ## Keep your context private
 
-The files in `_system/` and `work/knowledge/` are designed to hold priorities, schedules, people, products, and other potentially sensitive work context. A fork of a public GitHub repository is also public. Do not personalize these files in a public fork. Use a private repository or a local copy with a private remote for your actual second brain, and keep a public fork only for reusable contributions.
+The files in `_system/` and `work/knowledge/` are designed to hold priorities, schedules, people, products, and other potentially sensitive work context. That's the point of the system, and it's also what makes an accidental publication expensive.
+
+**Use the green "Use this template" button, not Fork.** This repo is set up as a GitHub template, so that button gives you a fresh repository you can set to **Private**, with no fork relationship and no shared history. That's what you want for real work.
+
+Fork only if you're contributing a change back. A fork of a public repository is public, and **a fork cannot be made private afterwards**: there's no setting for it, you'd have to delete it and start over. Anything that reached GitHub in the meantime may already have been cloned or indexed, and deleting a file later doesn't retract it.
+
+So don't personalize a fork. `.gitignore` won't save you there either: it has no effect on files Git already tracks, and every file in `_system/` is already tracked.
 
 ---
 
 ## Getting started
 
-1. Clone the repo
+1. Click **Use this template** and make your new repository **private**
 2. Fill in `_system/focus-context.md` with your current priorities
 3. Fill in `_system/time-context.md` with your real weekly constraints
 4. Edit `CLAUDE.md` to reflect your name, role, and how you want your AI assistant to work with you
-5. Create your first container using the templates in `work/_templates/`
+5. Skim `_system/security-guardrails.md` so you know what your assistant won't do on your behalf
+6. Create your first container using the templates in `work/_templates/`
 
 ---
 
